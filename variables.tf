@@ -16,15 +16,6 @@
 
 #TODO: tfdoc annotations
 
-variable "billing_account" {
-  # tfdoc:variable:source 00-bootstrap
-  description = "Billing account id and organization id ('nnnnnnnn' or null)."
-  type = object({
-    id              = string
-    organization_id = number
-  })
-}
-
 variable "data_dir" {
   description = "Relative path for the folder storing configuration data."
   type        = string
