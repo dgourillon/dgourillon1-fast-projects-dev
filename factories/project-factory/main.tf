@@ -148,7 +148,7 @@ module "dns" {
 }
 
 module "project" {
-  source                     = "../../../modules/project"
+  source                     = "../../modules/project"
   billing_account            = local.billing_account_id
   name                       = var.project_id
   prefix                     = var.prefix
