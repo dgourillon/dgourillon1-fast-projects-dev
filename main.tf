@@ -28,8 +28,7 @@ locals {
   defaults = merge(local._defaults, local._defaults_net)
   projects = {
     for f in fileset("${var.data_dir}", "**/*.yaml") :
-    #trimsuffix(f, ".yaml") => yamldecode(file("${var.data_dir}/${f}"))
-    trimsuffix(f, ".yaml") => yamldecode(file("data/projects/template-project.yaml"))
+    trimsuffix(f, ".yaml") => yamldecode(file("${var.data_dir}/${f}"))
   }
 }
 
