@@ -19,8 +19,8 @@ billing_alert:
 #   - ipsum
 
 # [opt] Contacts for billing alerts and important notifications
-essential_contacts:
-  - dgourillon@google.com
+#essential_contacts:
+#  - dgourillon@google.com
 
 # Folder the project will be created as children of
 folder_id: folders/1074164576777
