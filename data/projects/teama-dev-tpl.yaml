@@ -83,12 +83,12 @@ service_identities_iam:
   # service project attachment
 vpc:
   # [opt] If set, enables the container API
-  gke_setup:
-    # Grants "roles/container.hostServiceAgentUser" to the container robot if set
-    enable_host_service_agent: false
+  # gke_setup:
+  #   # Grants "roles/container.hostServiceAgentUser" to the container robot if set
+  #   enable_host_service_agent: false
 
-    # Grants  "roles/compute.securityAdmin" to the container robot if set
-    enable_security_admin: true
+  #   # Grants  "roles/compute.securityAdmin" to the container robot if set
+  #   enable_security_admin: true
 
   # Host project the project will be service project of
   host_project: 	d1-nw-dev-net-spoke-0
