@@ -4,7 +4,7 @@
 
 # [opt] Setup for billing alerts
 billing_alert:
-  amount: 1000
+  amount: 50
   thresholds:
     current: [0.5, 0.8]
     forecasted: [0.5, 0.8]
