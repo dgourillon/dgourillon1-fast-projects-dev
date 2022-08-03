@@ -32,9 +32,9 @@ group_iam:
 
 # [opt] Authoritative IAM bindings in role => [principals] format
 # Generally used to grant roles to service accounts external to the project
-#iam:
-#  roles/compute.admin:
-#    - serviceAccount:service-account
+iam:
+  roles/compute.admin:
+    - group:dgourillon-aliases@dgourillon1.joonix.net
 
 # [opt] Service robots and keys they will be assigned as cryptoKeyEncrypterDecrypter
 # in service => [keys] format
