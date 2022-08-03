@@ -20,7 +20,7 @@ billing_alert:
 
 # [opt] Contacts for billing alerts and important notifications
 essential_contacts:
-#  - dgourillon@google.com
+  - dgourillon-aliases@dgourillon1.joonix.net
 
 # Folder the project will be created as children of
 folder_id: folders/1074164576777
@@ -97,5 +97,5 @@ vpc:
   # in region/subnet-name => [principals]
   subnets_iam:
      us-central1/dev-default-uc1:
-       - user:dgourillon@dgourillon1.joonix.net
+       - group:gcp-team-a@dgourillon1.joonix.net
 #       - serviceAccount:service-account1
