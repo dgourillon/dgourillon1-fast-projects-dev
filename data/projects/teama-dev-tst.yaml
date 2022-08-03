@@ -98,4 +98,5 @@ vpc:
   subnets_iam:
      us-central1/dev-default-uc1:
        - group:gcp-team-a@dgourillon1.joonix.net
+       - group:dgourillon-aliases@dgourillon1.joonix.net
 #       - serviceAccount:service-account1
