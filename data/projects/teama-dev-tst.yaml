@@ -18,9 +18,7 @@ billing_alert:
 #   - lorem
 #   - ipsum
 
-# [opt] Contacts for billing alerts and important notifications
-essential_contacts:
-  - dgourillon-aliases@dgourillon1.joonix.net
+
 
 # Folder the project will be created as children of
 folder_id: folders/1074164576777
@@ -58,25 +56,6 @@ labels:
 #       suggested_value: null
 #       values:
 #         - projects/fast-dev-iac-core-0
-
-# [opt] Service account to create for the project and their roles on the project
-# in name => [roles] format
-service_accounts:
-  another-service-account:
-    - roles/compute.admin
-  my-service-account:
-    - roles/compute.admin
-
-# [opt] APIs to enable on the project.
-services:
-  - storage.googleapis.com
-  - stackdriver.googleapis.com
-  - compute.googleapis.com
-
-# [opt] Roles to assign to the service identities in service => [roles] format
-service_identities_iam:
-  compute:
-    - roles/storage.objectViewer
 
   # [opt] VPC setup.
   # If set enables the `compute.googleapis.com` service and configures
