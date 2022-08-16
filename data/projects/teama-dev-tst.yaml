@@ -45,6 +45,13 @@ labels:
   environment: dev
   terraform-factory: fast
 
+
+# [opt] APIs to enable on the project.
+services:
+  - storage.googleapis.com
+  - stackdriver.googleapis.com
+  - compute.googleapis.com
+
 # [opt] Org policy overrides defined at project level
 # org_policies:
 #   policy_boolean:
