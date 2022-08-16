@@ -28,3 +28,18 @@ notification_channels: []
 service_accounts:
   default-compute-sa:
     - roles/compute.admin
+
+
+# [opt] APIs to enable on the project.
+services:
+  - storage.googleapis.com
+  - stackdriver.googleapis.com
+  - compute.googleapis.com
+
+# [opt] Roles to assign to the service identities in service => [roles] format
+service_identities_iam:
+  compute:
+    - roles/storage.objectViewer
+
+
+ 
