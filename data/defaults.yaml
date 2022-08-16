@@ -22,3 +22,9 @@ labels:
 
 # [opt] Additional notification channels for billing
 notification_channels: []
+
+# [opt] Service account to create for the project and their roles on the project
+# in name => [roles] format
+service_accounts:
+  default-compute-sa:
+    - roles/compute.admin
