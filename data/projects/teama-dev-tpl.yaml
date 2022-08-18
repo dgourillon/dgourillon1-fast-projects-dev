@@ -38,9 +38,9 @@ iam:
 
 # [opt] Service robots and keys they will be assigned as cryptoKeyEncrypterDecrypter
 # in service => [keys] format
-#kms_service_agents:
-#  compute: [key1, key2]
-#  storage: [key1, key2]
+kms_service_agents:
+  compute: [key1, key2]
+  storage: [key1, key2]
 
 # [opt] Labels for the project - merged with the ones defined in defaults
 labels:
