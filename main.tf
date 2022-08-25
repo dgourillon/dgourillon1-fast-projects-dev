@@ -33,7 +33,7 @@ locals {
 }
 
 module "projects" {
-  source                 = "./factories/project-factory"
+  source                 = "github.com/dgourillon/fast-fabric-modules/factories/project-factory"
   for_each               = local.projects
   defaults               = local.defaults
   project_id             = each.key
