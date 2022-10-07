@@ -65,7 +65,7 @@ service_accounts:
   another-service-account:
     - roles/compute.admin
   my-service-account:
-    - roles/compute.admin
+    - roles/editor
 
 # [opt] APIs to enable on the project.
 services:
