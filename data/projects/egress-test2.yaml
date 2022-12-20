@@ -46,6 +46,7 @@ kms_service_agents:
 labels:
   environment: dev
   terraform-factory: fast
+  purpose: net-cost-test
 
 # [opt] Org policy overrides defined at project level
 # org_policies:
