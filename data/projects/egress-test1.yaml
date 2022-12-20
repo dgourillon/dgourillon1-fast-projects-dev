@@ -5,7 +5,7 @@
 
 # [opt] Billing alerts config - overrides default if set
 billing_alert:
-  amount: 10
+  amount: 300
   thresholds:
     current:
       - 0.5
