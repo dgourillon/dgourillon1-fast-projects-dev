@@ -49,12 +49,7 @@ labels:
   purpose: net-cost-test
 
 # [opt] Org policy overrides defined at project level
- org_policies:
-   policy_boolean:
-     constraints/compute.disableGuestAttributesAccess: true
-   policy_list:
-     constraints/compute.vmExternalIpAccess = local.list_deny
-#       inherit_from_parent: null
+
 #       status: true
 #       suggested_value: null
 #       values:
