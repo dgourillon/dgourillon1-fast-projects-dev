@@ -23,7 +23,7 @@ essential_contacts:
   - dgourillon-aliases@dgourillon1.joonix.net
 
 # Folder the project will be created as children of
-folder_id: folders/672228150967
+folder_id: folders/800627390657
 
 # [opt] Authoritative IAM bindings in group => [roles] format
 group_iam:
