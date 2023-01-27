@@ -81,22 +81,22 @@ service_identities_iam:
   # [opt] VPC setup.
   # If set enables the `compute.googleapis.com` service and configures
   # service project attachment
-vpc:
-  # [opt] If set, enables the container API
-  gke_setup:
-  #   # Grants "roles/container.hostServiceAgentUser" to the container robot if set
-  #   enable_host_service_agent: false
+# vpc:
+#   # [opt] If set, enables the container API
+#   gke_setup:
+#   #   # Grants "roles/container.hostServiceAgentUser" to the container robot if set
+#   #   enable_host_service_agent: false
 
-  #   # Grants  "roles/compute.securityAdmin" to the container robot if set
-  #   enable_security_admin: true
+#   #   # Grants  "roles/compute.securityAdmin" to the container robot if set
+#   #   enable_security_admin: true
 
-  # Host project the project will be service project of
-  host_project: 	d1-nw-dev-net-spoke-0
+#   # Host project the project will be service project of
+#   host_project: 	d1-nw-dev-net-spoke-0
 
-  # [opt] Subnets in the host project where principals will be granted networkUser
-  # in region/subnet-name => [principals]
-  subnets_iam:
-     us-central1/dev-default-uc1:
-       - group:gcp-team-a@dgourillon1.joonix.net
-       - group:dgourillon-aliases@dgourillon1.joonix.net
-#       - serviceAccount:service-account1
+#   # [opt] Subnets in the host project where principals will be granted networkUser
+#   # in region/subnet-name => [principals]
+#   subnets_iam:
+#      us-central1/dev-default-uc1:
+#        - group:gcp-team-a@dgourillon1.joonix.net
+#        - group:dgourillon-aliases@dgourillon1.joonix.net
+# #       - serviceAccount:service-account1
