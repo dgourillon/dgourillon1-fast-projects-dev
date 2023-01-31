@@ -44,16 +44,15 @@ labels:
   terraform-factory: fast
 
 # [opt] Org policy overrides defined at project level
-# org_policies:
-#   policy_boolean:
-#     constraints/compute.disableGuestAttributesAccess: true
-#   policy_list:
-#     constraints/compute.trustedImageProjects:
-#       inherit_from_parent: null
-#       status: true
-#       suggested_value: null
-#       values:
-#         - projects/fast-dev-iac-core-0
+org_policies:
+  policy_boolean:
+    constraints/compute.disableGuestAttributesAccess: true
+  policy_list:
+    constraints/compute.vmExternalIpAccess:
+      inherit_from_parent: null
+      status: true
+      suggested_value: null
+      values: []
 
 # [opt] Service account to create for the project and their roles on the project
 # in name => [roles] format
