@@ -49,7 +49,7 @@ org_policies:
     constraints/compute.disableGuestAttributesAccess: true
   policy_list:
     constraints/compute.vmExternalIpAccess:
-      inherit_from_parent: null
+      inherit_from_parent: false
       status: true
       suggested_value: null
       values: []
