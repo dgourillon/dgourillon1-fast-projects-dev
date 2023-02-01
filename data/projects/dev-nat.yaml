@@ -55,6 +55,9 @@ org_policies:
       suggested_value: null
       values: []
 
+
+essential_contacts: ["didier.gourillon@gmail.com"]
+
 # [opt] Service account to create for the project and their roles on the project
 # in name => [roles] format
 service_accounts:
