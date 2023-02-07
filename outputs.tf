@@ -23,3 +23,8 @@ output "debug_projects" {
   description = "debug the yzml decode"
   value       = local.projects
 }
+
+output "debug_data_projects" {
+  description = "debug the yzml decode"
+  value       = data.google_projects.my-org-projects
+}

@@ -32,6 +32,10 @@ locals {
   }
 }
 
+data "google_projects" "my-org-projects" {
+  filter = "parent.id:17056562108"
+}
+
 module "projects" {
   source                 = "github.com/dgourillon/fast-fabric-modules/factories/project-factory"
   for_each               = local.projects
@@ -55,3 +59,6 @@ module "projects" {
 }
 
 
+data "google_projects" "my-org-projects" {
+  filter = "parent.id:17056562108"
+}
